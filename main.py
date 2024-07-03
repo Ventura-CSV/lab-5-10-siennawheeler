@@ -2,11 +2,10 @@ import random
 
 
 def foldandswap(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    for x in range(len(numbers) // 2):
+        temp = numbers[x]
+        numbers[x] = numbers[len(numbers) - 1 - x]
+        numbers[len(numbers) - 1 - x] = temp
 
 
 def main():
